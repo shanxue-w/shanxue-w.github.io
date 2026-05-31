@@ -17,6 +17,7 @@ docs/superpowers/
 .git/
 .agents/
 .codex/
+local-notes/
 
 # LaTeX build outputs
 *.aux

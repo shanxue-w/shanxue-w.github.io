@@ -55,6 +55,12 @@ class MkDocsSiteBuildTest(unittest.TestCase):
         self.assertNotIn("Mentor:", index_html)
         self.assertNotIn("Remote Research Collaborator", index_html)
         self.assertNotIn("Early 2025 - Present", index_html)
+        self.assertIn('data-goatcounter="https://haowangmath.goatcounter.com/count"', index_html)
+        self.assertIn("https://gc.zgo.at/count.js", index_html)
+
+        site_js = (BUILD_DIR / "assets/js/site.js").read_text(encoding="utf-8")
+        self.assertIn("window.__pageViews", site_js)
+        self.assertIn("/counter/", site_js)
 
     def test_cv_tex_mentions_incoming_nus_phd(self):
         cv_tex = (ROOT / "WangHao_CV.tex").read_text(encoding="utf-8")

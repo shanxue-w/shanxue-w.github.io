@@ -49,3 +49,32 @@
     observer.observe(heading);
   });
 })();
+
+(function () {
+  var counterScript = document.querySelector("script[data-goatcounter]");
+
+  if (!counterScript || !window.fetch) {
+    return;
+  }
+
+  var countUrl = counterScript.getAttribute("data-goatcounter");
+  var baseUrl = countUrl.replace(/\/count\/?$/, "");
+
+  window.__pageViews = function (path) {
+    var targetPath = path || (window.goatcounter && window.goatcounter.get_data
+      ? window.goatcounter.get_data().p
+      : window.location.pathname);
+    var url = baseUrl + "/counter/" + encodeURIComponent(targetPath) + ".json";
+
+    return window.fetch(url)
+      .then(function (response) {
+        if (!response.ok) {
+          throw new Error("Unable to read GoatCounter views for " + targetPath);
+        }
+        return response.json();
+      })
+      .then(function (data) {
+        return data.count;
+      });
+  };
+})();

@@ -31,6 +31,8 @@ extra:
     avatar: assets/img/avatar-placeholder.svg
     cv_pdf: files/WangHao_CV.pdf
     summary: Numerical PDEs, Scientific Computing, Scientific Machine Learning.
+  analytics:
+    goatcounter: https://haowangmath.goatcounter.com/count
   homepage_nav:
     - title: About
       href: "#about"
