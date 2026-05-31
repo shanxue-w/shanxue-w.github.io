@@ -1,17 +1,35 @@
+# MkDocs build outputs
 site/
 _site_test/
+
+# Python caches and local environments
 .cache/
 __pycache__/
 *.py[cod]
 .pytest_cache/
+.venv/
+venv/
+
+# Local agent/runtime metadata
 .superpowers/
+docs/superpowers/
 .git-data/
 .git/
 .agents/
 .codex/
+
+# LaTeX build outputs
 *.aux
+*.bbl
+*.bcf
+*.blg
 *.fdb_latexmk
 *.fls
 *.log
 *.out
+*.run.xml
 *.synctex.gz
+*.toc
+
+# OS/editor noise
+.DS_Store
