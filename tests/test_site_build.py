@@ -35,8 +35,16 @@ class MkDocsSiteBuildTest(unittest.TestCase):
         self.assertIn("profile-sidebar", index_html)
         self.assertIn("Hao Wang", index_html)
         self.assertIn("Structure-Preserving Operator Learning", index_html)
+        self.assertIn("Incoming Ph.D. student", index_html)
+        self.assertIn("National University of Singapore", index_html)
         self.assertIn("WangHao_CV.pdf", index_html)
         self.assertNotIn("+86 152 7099 8779", index_html)
+
+    def test_cv_tex_mentions_incoming_nus_phd(self):
+        cv_tex = (ROOT / "WangHao_CV.tex").read_text(encoding="utf-8")
+
+        self.assertIn("Incoming Ph.D. Student", cv_tex)
+        self.assertIn("National University of Singapore", cv_tex)
 
 
 if __name__ == "__main__":

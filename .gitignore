@@ -9,3 +9,9 @@ __pycache__/
 .git/
 .agents/
 .codex/
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz

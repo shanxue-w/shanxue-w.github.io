@@ -1,6 +1,6 @@
 # About
 
-I am an undergraduate student in Mathematics and Applied Mathematics at Zhejiang University. My current interests lie in structure-preserving operator learning, scientific machine learning, numerical analysis for partial differential equations, and computational fluid dynamics.
+I am an Incoming Ph.D. student at the National University of Singapore (NUS) and an undergraduate student in Mathematics and Applied Mathematics at Zhejiang University. My current interests lie in structure-preserving operator learning, scientific machine learning, numerical analysis for partial differential equations, and computational fluid dynamics.
 
 This homepage is an initial version generated from an older CV snapshot. I will keep the structure stable and update the detailed content as my projects, papers, and links become current.
 
@@ -9,6 +9,7 @@ This homepage is an initial version generated from an older CV snapshot. I will 
 - **2025** Received the Chu Kochen Scholarship at Zhejiang University.
 - **2025** Continued work on structure-preserving operator learning and scientific machine learning.
 - **2025** Prepared manuscripts on model-error learning and neural operators for convection-diffusion regimes.
+- **Upcoming** Will join the National University of Singapore (NUS) as a Ph.D. student.
 
 ## Research Interests
 
@@ -26,6 +27,9 @@ This homepage is an initial version generated from an older CV snapshot. I will 
   Hao Wang and Qi Tang. Manuscript in preparation, 2025.
 
 ## Education
+
+**National University of Singapore (NUS)**  
+Incoming Ph.D. student
 
 **Zhejiang University**  
 Mathematics and Applied Mathematics, Sep 2022 - Present

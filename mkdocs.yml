@@ -23,14 +23,14 @@ nav:
 extra:
   profile:
     name: Hao Wang
-    title: Undergraduate Student
-    affiliation: Zhejiang University
-    department: Mathematics and Applied Mathematics
+    title: Incoming Ph.D. student
+    affiliation: National University of Singapore (NUS)
+    department: Mathematics and Applied Mathematics, Zhejiang University
     location: Hangzhou, China
     email: 3220104819@zju.edu.cn
     avatar: assets/img/avatar-placeholder.svg
     cv_pdf: files/WangHao_CV.pdf
-    summary: Structure-preserving operator learning, scientific machine learning, numerical PDEs, and computational fluid dynamics.
+    summary: Incoming Ph.D. student at NUS working on structure-preserving operator learning, scientific machine learning, numerical PDEs, and computational fluid dynamics.
   homepage_nav:
     - title: About
       href: "#about"
