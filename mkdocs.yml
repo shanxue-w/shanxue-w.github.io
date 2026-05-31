@@ -1,0 +1,46 @@
+site_name: Hao Wang
+site_author: Hao Wang
+site_description: Personal academic homepage of Hao Wang.
+site_url: https://hao.wang.github.io/
+docs_dir: docs
+site_dir: site
+
+theme:
+  name: mkdocs
+  custom_dir: overrides
+
+plugins: []
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - sane_lists
+
+nav:
+  - Home: index.md
+  - CV: cv.md
+
+extra:
+  profile:
+    name: Hao Wang
+    title: Undergraduate Student
+    affiliation: Zhejiang University
+    department: Mathematics and Applied Mathematics
+    location: Hangzhou, China
+    email: 3220104819@zju.edu.cn
+    avatar: assets/img/avatar-placeholder.svg
+    cv_pdf: files/WangHao_CV.pdf
+    summary: Structure-preserving operator learning, scientific machine learning, numerical PDEs, and computational fluid dynamics.
+  homepage_nav:
+    - title: About
+      href: "#about"
+    - title: News
+      href: "#news"
+    - title: Publications
+      href: "#publications-manuscripts"
+    - title: Education
+      href: "#education"
+    - title: Research
+      href: "#research-experience"
+    - title: Awards
+      href: "#honors-awards"

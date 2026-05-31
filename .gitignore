@@ -1,0 +1,11 @@
+site/
+_site_test/
+.cache/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.superpowers/
+.git-data/
+.git/
+.agents/
+.codex/

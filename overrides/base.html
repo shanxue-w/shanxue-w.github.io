@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% if page and page.is_homepage %}<meta name="description" content="{{ config.site_description }}">{% endif %}
+    {% if config.site_author %}<meta name="author" content="{{ config.site_author }}">{% endif %}
+    {% if page and page.canonical_url %}<link rel="canonical" href="{{ page.canonical_url }}">{% endif %}
+    <title>{% if page and page.title and not page.is_homepage %}{{ page.title }} - {% endif %}{{ config.site_name }}</title>
+    <link rel="stylesheet" href="{{ 'assets/css/site.css'|url }}">
+  </head>
+  <body{% if page and page.is_homepage %} class="homepage"{% endif %}>
+    {% set profile = config.extra.profile %}
+    {% set home_url = nav.homepage.url|url %}
+
+    <header class="site-header">
+      <a class="site-title" href="{{ home_url }}">{{ profile.name }}</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+        {% for item in config.extra.homepage_nav %}
+          <a href="{% if page and page.is_homepage %}{{ item.href }}{% else %}{{ home_url }}{{ item.href }}{% endif %}" data-section="{{ item.href[1:] }}">{{ item.title }}</a>
+        {% endfor %}
+        <a href="{{ profile.cv_pdf|url }}">CV</a>
+      </nav>
+    </header>
+
+    <div class="page-shell">
+      <aside class="profile-sidebar" aria-label="Profile">
+        <img class="profile-avatar" src="{{ profile.avatar|url }}" alt="Profile placeholder for {{ profile.name }}">
+        <h1 class="profile-name">{{ profile.name }}</h1>
+        <p class="profile-title">{{ profile.title }}</p>
+        <p class="profile-affiliation">
+          {{ profile.department }}<br>
+          {{ profile.affiliation }}
+        </p>
+
+        <ul class="profile-links">
+          <li><span class="profile-label">Location</span><span>{{ profile.location }}</span></li>
+          <li><span class="profile-label">Email</span><a href="mailto:{{ profile.email }}">{{ profile.email }}</a></li>
+          <li><span class="profile-label">CV</span><a href="{{ profile.cv_pdf|url }}">Download PDF</a></li>
+        </ul>
+
+        <div class="profile-summary">
+          <h2>Research Interests</h2>
+          <p>{{ profile.summary }}</p>
+        </div>
+      </aside>
+
+      <main class="page-content" id="main-content">
+        {{ page.content }}
+      </main>
+    </div>
+
+    <footer class="site-footer">
+      <span>&copy; 2026 Hao Wang.</span>
+      <span>Built with MkDocs.</span>
+    </footer>
+
+    <script src="{{ 'assets/js/site.js'|url }}" defer></script>
+  </body>
+</html>
