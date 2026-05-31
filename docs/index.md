@@ -32,10 +32,7 @@ This homepage is an initial version generated from an older CV snapshot. I will 
 Incoming Ph.D. student
 
 **Zhejiang University**  
-Mathematics and Applied Mathematics, Sep 2022 - Present
-
-- GPA: 4.20/4.30 (93.70/100)
-- Relevant coursework: Real Analysis, Functional Analysis (H), Partial Differential Equations (H), Numerical Analysis
+Undergraduate student in Mathematics and Applied Mathematics, Sep 2022 - Present
 
 ## Research Experience
 

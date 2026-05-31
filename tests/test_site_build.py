@@ -37,6 +37,9 @@ class MkDocsSiteBuildTest(unittest.TestCase):
         self.assertIn("Structure-Preserving Operator Learning", index_html)
         self.assertIn("Incoming Ph.D. student", index_html)
         self.assertIn("National University of Singapore", index_html)
+        self.assertIn("undergraduate student", index_html)
+        self.assertNotIn("GPA:", index_html)
+        self.assertNotIn("Relevant coursework", index_html)
         self.assertIn("WangHao_CV.pdf", index_html)
         self.assertNotIn("+86 152 7099 8779", index_html)
 
