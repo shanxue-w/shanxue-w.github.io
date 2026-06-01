@@ -2,6 +2,7 @@ import shutil
 import subprocess
 import unittest
 import re
+import html
 from pathlib import Path
 
 
@@ -32,6 +33,10 @@ class MkDocsSiteBuildTest(unittest.TestCase):
         self.assertEqual(result.returncode, 0, result.stdout)
 
         index_html = (BUILD_DIR / "index.html").read_text(encoding="utf-8")
+        title_match = re.search(r"<title>(.*?)</title>", index_html)
+        self.assertIsNotNone(title_match)
+        self.assertEqual("Welcome to Hao Wang's Homepage", html.unescape(title_match.group(1)))
+        self.assertIn('<link rel="canonical" href="https://haowangmath.org/">', index_html)
 
         self.assertIn("profile-sidebar", index_html)
         self.assertIn("Hao Wang", index_html)

@@ -1,7 +1,7 @@
 site_name: Hao Wang
 site_author: Hao Wang
 site_description: Personal academic homepage of Hao Wang.
-site_url: https://shanxue-w.github.io
+site_url: https://haowangmath.org
 docs_dir: docs
 site_dir: site
 
@@ -33,6 +33,8 @@ extra:
     summary: Numerical PDEs, Scientific Computing, Scientific Machine Learning.
   analytics:
     goatcounter: https://haowangmath.goatcounter.com/count
+  seo:
+    home_title: Welcome to Hao Wang's Homepage
   homepage_nav:
     - title: About
       href: "#about"
