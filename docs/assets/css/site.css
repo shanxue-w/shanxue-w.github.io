@@ -111,6 +111,7 @@ a:focus {
   display: grid;
   grid-template-columns: 170px minmax(0, 1fr);
   gap: 34px;
+  align-items: center;
   width: min(var(--max-width), calc(100% - 40px));
   margin: 0 auto;
   padding: 44px 0 38px;
@@ -190,17 +191,13 @@ a:focus {
   text-decoration: none;
 }
 
-.social-link .fa {
+.social-icon {
   width: 18px;
   height: 18px;
   max-width: 18px;
   max-height: 18px;
   flex: 0 0 auto;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 18px;
-  line-height: 1;
+  display: block;
 }
 
 .page-content {

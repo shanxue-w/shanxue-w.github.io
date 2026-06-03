@@ -35,15 +35,23 @@ extra:
     links:
       - label: GitHub
         icon: github
+        icon_path: assets/icons/github.svg
         url: https://github.com/shanxue-w
       - label: Google Scholar
         icon: scholar
+        icon_path: assets/icons/google-scholar.svg
         url: https://scholar.google.com/
       - label: LinkedIn
         icon: linkedin
+        icon_path: assets/icons/linkedin.svg
         url: https://www.linkedin.com/in/hao-wang-0531343a5/
+      - label: ORCID
+        icon: orcid
+        icon_path: assets/icons/orcid.svg
+        url: https://orcid.org/my-orcid?orcid=0009-0005-4075-897X
       - label: Email
         icon: email
+        icon_path: assets/icons/email.svg
         url: mailto:wanghaomathe@gmail.com
   analytics:
     goatcounter: https://haowangmath.goatcounter.com/count
