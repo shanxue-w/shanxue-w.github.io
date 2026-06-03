@@ -190,14 +190,17 @@ a:focus {
   text-decoration: none;
 }
 
-.social-link svg {
+.social-link .fa {
   width: 18px;
   height: 18px;
   max-width: 18px;
   max-height: 18px;
-  fill: currentColor;
   flex: 0 0 auto;
-  display: block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  line-height: 1;
 }
 
 .page-content {
