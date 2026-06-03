@@ -54,7 +54,7 @@
           <div class="profile-social" aria-label="Profile links">
             {% for link in profile.links %}
               <a class="social-link" href="{{ link.url }}" aria-label="{{ link.label }}">
-                <img class="social-icon" src="{{ link.icon_path|url }}" alt="" aria-hidden="true">
+                <img class="social-icon" src="{{ link.icon_path|url }}" alt="" aria-hidden="true" width="18" height="18">
                 <span>{{ link.label }}</span>
               </a>
             {% endfor %}

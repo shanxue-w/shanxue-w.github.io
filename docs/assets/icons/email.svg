@@ -1,3 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img">
-  <path fill="#475569" d="M3.5 5h17A2.5 2.5 0 0 1 23 7.5v9A2.5 2.5 0 0 1 20.5 19h-17A2.5 2.5 0 0 1 1 16.5v-9A2.5 2.5 0 0 1 3.5 5Zm.2 2 8.3 5.8L20.3 7H3.7Zm17.3 9.3V8.9l-9 6.3-9-6.3v7.4c0 .39.31.7.7.7h16.6c.39 0 .7-.31.7-.7Z"/>
+<svg xmlns="http://www.w3.org/2000/svg" role="img" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#475569" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <title>Email</title>
+  <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/>
+  <rect x="2" y="4" width="20" height="16" rx="2"/>
 </svg>
