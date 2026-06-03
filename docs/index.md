@@ -9,6 +9,19 @@ I am an incoming Ph.D. student at the National University of Singapore (NUS) and
 - **2025** One manuscript on learning missing physics from legacy simulators was accepted.
 - **Upcoming** Will join the National University of Singapore (NUS) as a Ph.D. student.
 
+## Selected Publications
+
+<article class="publication-card">
+  <div class="publication-media">
+    <img src="assets/img/publication-placeholder.svg" alt="Accepted manuscript placeholder">
+  </div>
+  <div class="publication-body">
+    <h3>Learning missing physics from legacy simulators with alternating neural integrators</h3>
+    <p class="publication-authors"><strong>Hao Wang</strong>, Qinghe Wang, Caiyou Yuan, and Kailiang Wu</p>
+    <p class="publication-status">Accepted, 2026</p>
+  </div>
+</article>
+
 ## Education
 
 **National University of Singapore (NUS)**  
@@ -22,16 +35,3 @@ Undergraduate student in Mathematics and Applied Mathematics, 2022.09-Present
 - Structure-Preserving Operator Learning
 - Scientific Machine Learning (SciML)
 - Numerical Analysis for PDEs
-
-## Selected Publications
-
-<article class="publication-card">
-  <div class="publication-media">
-    <img src="assets/img/publication-placeholder.svg" alt="Accepted manuscript placeholder">
-  </div>
-  <div class="publication-body">
-    <h3>Learning missing physics from legacy simulators with alternating neural integrators</h3>
-    <p class="publication-authors"><strong>Hao Wang</strong>, Qinghe Wang, Caiyou Yuan, and Kailiang Wu</p>
-    <p class="publication-status">Accepted, 2026</p>
-  </div>
-</article>
