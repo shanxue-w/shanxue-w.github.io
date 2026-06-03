@@ -29,10 +29,12 @@ The test builds the MkDocs site into `_site_test/` and checks the rendered homep
 ## Editing Content
 
 - Main homepage content: `docs/index.md`
-- CV landing page: `docs/cv.md`
-- Downloadable CV PDF: `docs/files/WangHao_CV.pdf`
+- Publications page: `docs/publications.md`
+- Research page: `docs/research.md`
+- Awards page: `docs/awards.md`
 - Profile metadata and navigation: `mkdocs.yml`
 - Layout template: `overrides/base.html`
 - Site styles: `docs/assets/css/site.css`
+- Publication placeholder image: `docs/assets/img/publication-placeholder.svg`
 
 Replace `docs/assets/img/avatar-placeholder.svg` with a personal photo when ready, and update `mkdocs.yml` if the filename changes.

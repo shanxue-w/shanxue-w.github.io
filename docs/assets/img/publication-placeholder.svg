@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-labelledby="title desc">
+  <title id="title">Accepted manuscript placeholder</title>
+  <desc id="desc">Abstract geometric waves representing a scientific manuscript.</desc>
+  <rect width="640" height="400" fill="#f4f7fb"/>
+  <rect x="56" y="48" width="528" height="304" rx="18" fill="#ffffff" stroke="#d8e1ec" stroke-width="3"/>
+  <path d="M104 265c65-75 122-75 170 0s105 75 170 0 112-75 148 0" fill="none" stroke="#1f6feb" stroke-width="16" stroke-linecap="round"/>
+  <path d="M104 204c58-56 108-56 150 0s92 56 150 0 101-56 132 0" fill="none" stroke="#14b8a6" stroke-width="12" stroke-linecap="round" opacity=".85"/>
+  <circle cx="174" cy="130" r="34" fill="#1f6feb" opacity=".12"/>
+  <circle cx="466" cy="128" r="44" fill="#14b8a6" opacity=".14"/>
+  <path d="M134 122h126M134 158h186M372 122h104M372 158h146" stroke="#6b7a90" stroke-width="10" stroke-linecap="round"/>
+</svg>
