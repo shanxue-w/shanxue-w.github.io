@@ -193,8 +193,11 @@ a:focus {
 .social-link svg {
   width: 18px;
   height: 18px;
+  max-width: 18px;
+  max-height: 18px;
   fill: currentColor;
   flex: 0 0 auto;
+  display: block;
 }
 
 .page-content {

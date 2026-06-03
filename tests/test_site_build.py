@@ -55,6 +55,7 @@ class MkDocsSiteBuildTest(unittest.TestCase):
         self.assertIn('aria-label="Google Scholar"', index_html)
         self.assertIn('aria-label="LinkedIn"', index_html)
         self.assertIn('aria-label="Email"', index_html)
+        self.assertEqual(4, len(re.findall(r'<svg width="18" height="18" viewBox="0 0 24 24"', index_html)))
         self.assertIn("Structure-Preserving Operator Learning", index_html)
         self.assertIn("Incoming Ph.D. student", index_html)
         self.assertIn("National University of Singapore", index_html)
