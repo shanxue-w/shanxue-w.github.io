@@ -5,8 +5,7 @@ I am an incoming Ph.D. student at the National University of Singapore (NUS) and
 ## News
 
 - **2025** Received the Chu Kochen Scholarship at Zhejiang University.
-- **2025** Continued work on structure-preserving operator learning and scientific machine learning.
-- **2025** One manuscript on learning missing physics from legacy simulators was accepted.
+- **2026** One manuscript on learning missing physics from legacy simulators was accepted.
 - **Upcoming** Will join the National University of Singapore (NUS) as a Ph.D. student.
 
 ## Selected Publications
