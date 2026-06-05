@@ -48,7 +48,7 @@ extra:
       - label: ORCID
         icon: orcid
         icon_path: assets/icons/orcid.svg
-        url: https://orcid.org/my-orcid?orcid=0009-0005-4075-897X
+        url: https://orcid.org/0009-0005-4075-897X
       - label: Email
         icon: email
         icon_path: assets/icons/email.svg
