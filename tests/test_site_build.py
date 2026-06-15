@@ -46,6 +46,10 @@ class MkDocsSiteBuildTest(unittest.TestCase):
 
         self.assertIn("profile-hero", index_html)
         self.assertNotIn("profile-sidebar", index_html)
+        self.assertIn("assets/img/hao-wang.jpg", index_html)
+        self.assertNotIn("assets/img/avatar-placeholder.svg", index_html)
+        self.assertIn('alt="Photo of Hao Wang"', index_html)
+        self.assertTrue((ROOT / "docs/assets/img/hao-wang.jpg").is_file())
         self.assertIn("Hao Wang", index_html)
         self.assertIn("wanghaomathe@gmail.com", index_html)
         self.assertIn("https://github.com/shanxue-w", index_html)
@@ -73,6 +77,7 @@ class MkDocsSiteBuildTest(unittest.TestCase):
         self.assertIn("block-size: 18px", site_css)
         self.assertIn("min-height: 34px", site_css)
         self.assertIn(".social-icon", site_css)
+        self.assertIn("object-fit: cover", site_css)
         self.assertIn("Structure-Preserving Operator Learning", index_html)
         self.assertIn("Incoming Ph.D. student", index_html)
         self.assertIn("National University of Singapore", index_html)

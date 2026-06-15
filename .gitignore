@@ -19,6 +19,9 @@ docs/superpowers/
 .codex/
 local-notes/
 
+# Local source images
+photo_me.jpg
+
 # LaTeX build outputs
 *.aux
 *.bbl

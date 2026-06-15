@@ -121,6 +121,8 @@ a:focus {
   display: block;
   width: 168px;
   height: 168px;
+  object-fit: cover;
+  object-position: center center;
   border: 1px solid var(--border);
   border-radius: 8px;
   background: var(--surface-muted);
