@@ -33,6 +33,9 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install "mkdocs>=1.6,<2"
 
+      - name: Generate publications page
+        run: python scripts/generate_publications.py
+
       - name: Run tests
         run: python tests/test_site_build.py
 

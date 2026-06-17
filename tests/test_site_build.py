@@ -118,9 +118,17 @@ class MkDocsSiteBuildTest(unittest.TestCase):
         preprints_pos = publications_html.index('id="preprints"')
         accepted_pos = publications_html.index('id="accepted"')
         self.assertLess(preprints_pos, accepted_pos)
+        self.assertIn("LGNO: A local–global neural operator for hyperbolic conservation laws", publications_html)
+        self.assertIn("Hao Wang, Chi-Wang Shu, and Qi Tang. JCP, submitted, 2026.", publications_text)
         self.assertIn("Hao Wang and Qi Tang. Submitted, double-blind peer review, 2026.", publications_text)
         self.assertIn("Learning missing physics from legacy simulators with alternating neural integrators", publications_html)
         self.assertIn("Hao Wang, Qinghe Wang, Caiyou Yuan, and Kailiang Wu. Accepted, 2026.", publications_text)
+        self.assertIn('<ol start="3">', publications_html)
+        lgno_pos = publications_text.index("LGNO: A local–global neural operator for hyperbolic conservation laws")
+        blinded_preprint_pos = publications_text.index("Hao Wang and Qi Tang. Submitted, double-blind peer review, 2026.")
+        accepted_publication_pos = publications_text.index("Learning missing physics from legacy simulators with alternating neural integrators")
+        self.assertLess(lgno_pos, blinded_preprint_pos)
+        self.assertLess(blinded_preprint_pos, accepted_publication_pos)
         self.assertNotIn("H. Wang", publications_text)
         self.assertNotIn("Q. Tang", publications_text)
 
@@ -154,6 +162,17 @@ class MkDocsSiteBuildTest(unittest.TestCase):
 
         self.assertIn("Incoming Ph.D. Student", cv_tex)
         self.assertIn("National University of Singapore", cv_tex)
+
+    def test_publications_markdown_is_generated_from_data(self):
+        result = subprocess.run(
+            ["python3", "scripts/generate_publications.py", "--check"],
+            cwd=ROOT,
+            text=True,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.STDOUT,
+            check=False,
+        )
+        self.assertEqual(result.returncode, 0, result.stdout)
 
     def test_cv_tex_is_synced_with_homepage_research_updates(self):
         cv_tex = (ROOT / "WangHao_CV.tex").read_text(encoding="utf-8")

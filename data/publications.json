@@ -1,0 +1,28 @@
+{
+  "sections": [
+    {
+      "heading": "Preprints",
+      "entries": [
+        {
+          "title": "LGNO: A local–global neural operator for hyperbolic conservation laws",
+          "authors": "Hao Wang, Chi-Wang Shu, and Qi Tang",
+          "details": "JCP, submitted, 2026"
+        },
+        {
+          "authors": "Hao Wang and Qi Tang",
+          "details": "Submitted, double-blind peer review, 2026"
+        }
+      ]
+    },
+    {
+      "heading": "Accepted",
+      "entries": [
+        {
+          "title": "Learning missing physics from legacy simulators with alternating neural integrators",
+          "authors": "Hao Wang, Qinghe Wang, Caiyou Yuan, and Kailiang Wu",
+          "details": "Accepted, 2026"
+        }
+      ]
+    }
+  ]
+}
