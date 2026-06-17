@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -21,9 +22,13 @@ def sentence(text: str) -> str:
     return f"{text}."
 
 
+def bold_years(text: str) -> str:
+    return re.sub(r"\b((?:19|20)\d{2})\b", r"**\1**", text.strip())
+
+
 def render_entry(number: int, entry: dict[str, str]) -> str:
     authors = sentence(entry["authors"])
-    details = sentence(entry["details"])
+    details = sentence(bold_years(entry["details"]))
     if entry.get("title"):
         return f"{number}. **{entry['title']}**<br>\n   {authors} {details}"
     return f"{number}. {authors} {details}"
