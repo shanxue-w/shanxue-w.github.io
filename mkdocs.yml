@@ -40,7 +40,7 @@ extra:
       - label: Google Scholar
         icon: scholar
         icon_path: assets/icons/google-scholar.svg
-        url: https://scholar.google.com/
+        url: "https://scholar.google.com/citations?hl=en&user=2jZ-Kq8AAAAJ"
       - label: LinkedIn
         icon: linkedin
         icon_path: assets/icons/linkedin.svg
