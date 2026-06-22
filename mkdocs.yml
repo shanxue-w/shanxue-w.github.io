@@ -49,10 +49,11 @@ extra:
         icon: orcid
         icon_path: assets/icons/orcid.svg
         url: https://orcid.org/0009-0005-4075-897X
-      - label: Email
-        icon: email
-        icon_path: assets/icons/email.svg
-        url: mailto:wanghaomathe@gmail.com
+      - label: ResearchGate
+        display_label: RG
+        icon: researchgate
+        icon_path: assets/icons/researchgate.svg
+        url: https://www.researchgate.net/profile/Hao-Wang-619
   analytics:
     goatcounter: https://haowangmath.goatcounter.com/count
   seo:
