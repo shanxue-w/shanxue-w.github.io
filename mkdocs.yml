@@ -50,7 +50,6 @@ extra:
         icon_path: assets/icons/orcid.svg
         url: https://orcid.org/0009-0005-4075-897X
       - label: ResearchGate
-        display_label: RG
         icon: researchgate
         icon_path: assets/icons/researchgate.svg
         url: https://www.researchgate.net/profile/Hao-Wang-619
