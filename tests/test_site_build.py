@@ -107,9 +107,13 @@ class MkDocsSiteBuildTest(unittest.TestCase):
         self.assertIn(".social-icon", site_css)
         self.assertIn("object-fit: cover", site_css)
         self.assertIn("Structure-Preserving Operator Learning", index_html)
-        self.assertIn("Incoming Ph.D. student", index_html)
+        self.assertIn("Ph.D. Student", index_html)
+        self.assertIn("Department of Mathematics", index_html)
         self.assertIn("National University of Singapore", index_html)
-        self.assertIn("undergraduate student", index_html)
+        self.assertIn("Aug 2026 -", index_html)
+        self.assertIn("Sep 2022 - June 2026", index_html)
+        self.assertNotIn("undergraduate student", index_html.lower())
+        self.assertNotIn("Incoming Ph.D.", index_html)
         news_pos = index_html.index('id="news"')
         education_pos = index_html.index('id="education"')
         self.assertLess(news_pos, education_pos)
@@ -177,8 +181,7 @@ class MkDocsSiteBuildTest(unittest.TestCase):
         self.assertIn("2025.12-2026.04", research_html)
         self.assertIn("2025.07-2025.08", research_html)
         self.assertIn("2024.03-2025.05", research_html)
-        self.assertIn("2022.09-Present", index_html)
-        self.assertIsNone(re.search(r"\b(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]* \d{4}\b", index_html))
+        self.assertIn("Sep 2022 - June 2026", index_html)
         self.assertNotIn("2026.4", index_html)
         self.assertNotIn("Mentor:", index_html)
         self.assertNotIn("Remote Research Collaborator", index_html)
@@ -196,11 +199,14 @@ class MkDocsSiteBuildTest(unittest.TestCase):
         self.assertIn("window.__pageViews", site_js)
         self.assertIn("/counter/", site_js)
 
-    def test_cv_tex_mentions_incoming_nus_phd(self):
+    def test_cv_tex_mentions_nus_phd(self):
         cv_tex = (ROOT / "WangHao_CV.tex").read_text(encoding="utf-8")
 
-        self.assertIn("Incoming Ph.D. Student", cv_tex)
+        self.assertIn("Ph.D. Student, Department of Mathematics", cv_tex)
         self.assertIn("National University of Singapore", cv_tex)
+        self.assertIn("Aug 2026 -", cv_tex)
+        self.assertIn("Sep 2022 - June 2026", cv_tex)
+        self.assertNotIn("Incoming Ph.D.", cv_tex)
 
     def test_publications_markdown_is_generated_from_data(self):
         result = subprocess.run(
@@ -224,8 +230,7 @@ class MkDocsSiteBuildTest(unittest.TestCase):
         self.assertIn("2025.12-2026.04", cv_tex)
         self.assertIn("2025.07-2025.08", cv_tex)
         self.assertIn("2024.03-2025.05", cv_tex)
-        self.assertIn("2022.09-Present", cv_tex)
-        self.assertIsNone(re.search(r"\b(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]* \d{4}\b", cv_tex))
+        self.assertIn("Sep 2022 - June 2026", cv_tex)
         self.assertNotIn("2026.4", cv_tex)
         self.assertIn("Supervisor: Prof. Qi Tang", cv_tex)
         self.assertNotIn("Mentor", cv_tex)

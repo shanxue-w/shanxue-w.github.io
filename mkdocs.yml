@@ -25,10 +25,10 @@ nav:
 extra:
   profile:
     name: Hao Wang
-    title: Incoming Ph.D. student at NUS
-    affiliation: Zhejiang University
-    department: Mathematics and Applied Mathematics, Zhejiang University
-    location: Hangzhou, China
+    title: Ph.D. Student
+    affiliation: National University of Singapore (NUS)
+    department: Department of Mathematics
+    location: Singapore
     email: wanghaomathe@gmail.com
     avatar: assets/img/hao-wang.jpg
     summary: Numerical PDEs, Scientific Computing, Scientific Machine Learning.
