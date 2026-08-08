@@ -119,8 +119,11 @@ class MkDocsSiteBuildTest(unittest.TestCase):
         self.assertLess(news_pos, education_pos)
         self.assertNotIn('id="selected-publications"', index_html)
         self.assertNotIn("Continued work on structure-preserving operator learning and scientific machine learning", index_text)
-        self.assertIn("2026 One manuscript on learning missing physics from legacy simulators was accepted.", index_text)
-        self.assertNotIn("2025 One manuscript on learning missing physics from legacy simulators was accepted.", index_text)
+        self.assertIn(
+            "2026.06 Our article on learning missing physics from legacy simulators was published in Nature Communications.",
+            index_text,
+        )
+        self.assertNotIn("One manuscript on learning missing physics from legacy simulators was accepted.", index_text)
         self.assertNotIn("GPA:", index_html)
         self.assertNotIn("Relevant coursework", index_html)
         self.assertNotIn("Download PDF", index_html)
@@ -156,14 +159,19 @@ class MkDocsSiteBuildTest(unittest.TestCase):
         self.assertIn("Learning missing physics from legacy simulators with alternating neural integrators", publications_html)
         self.assertIn(
             "Hao Wang, Qinghe Wang, Caiyou Yuan, and Kailiang Wu. "
-            "Article in press, Nature Communications, 2026.",
+            "Nature Communications 17, 7877 (2026). DOI.",
             publications_text,
         )
-        self.assertIn("Article in press, <strong>Nature Communications</strong>, <strong>2026</strong>.", publications_html)
-        self.assertNotIn("DOI:", publications_text)
-        self.assertNotIn("10.1038/s41467-026-74002-2", publications_html)
-        self.assertNotIn("https://doi.org/10.1038/s41467-026-74002-2", publications_html)
+        self.assertIn(
+            "<strong>Nature Communications</strong> <strong>17</strong>, 7877 (<strong>2026</strong>).",
+            publications_html,
+        )
+        self.assertIn(
+            '<a href="https://doi.org/10.1038/s41467-026-74002-2">DOI</a>',
+            publications_html,
+        )
         self.assertNotIn("Accepted, 2026", publications_text)
+        self.assertNotIn("Article in press", publications_text)
         self.assertIn("Submitted, <strong>2026</strong>.", publications_html)
         self.assertIn("Submitted, double-blind peer review, <strong>2026</strong>.", publications_html)
         self.assertIn('<ol start="3">', publications_html)

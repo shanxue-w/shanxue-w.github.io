@@ -5,7 +5,7 @@ I am a Ph.D. student in the Department of Mathematics at the National University
 ## News
 
 - **2025** Received the Chu Kochen Scholarship at Zhejiang University.
-- **2026** One manuscript on learning missing physics from legacy simulators was accepted.
+- **2026.06** Our article on learning missing physics from legacy simulators was published in *Nature Communications*.
 - **2026.08** Will begin Ph.D. studies in the Department of Mathematics at the National University of Singapore (NUS).
 
 ## Education
