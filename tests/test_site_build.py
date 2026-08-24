@@ -128,6 +128,7 @@ class MkDocsSiteBuildTest(unittest.TestCase):
         self.assertNotIn("Relevant coursework", index_html)
         self.assertNotIn("Download PDF", index_html)
         self.assertNotIn("WangHao_CV.pdf", index_html)
+        self.assertFalse((BUILD_DIR / "files" / "WangHao_CV.pdf").exists())
         self.assertNotIn("+86 152 7099 8779", index_html)
         self.assertIn('href="publications/">Publications</a>', index_html)
         self.assertIn('href="research/">Research</a>', index_html)
