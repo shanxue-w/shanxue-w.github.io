@@ -111,7 +111,7 @@ class MkDocsSiteBuildTest(unittest.TestCase):
         self.assertIn("Department of Mathematics", index_html)
         self.assertIn("National University of Singapore", index_html)
         self.assertIn("2026.08-", index_html)
-        self.assertIn("2022.09-2026.06", index_html)
+        self.assertIn("2022.09-2026.07", index_html)
         self.assertNotIn("undergraduate student", index_html.lower())
         self.assertNotIn("Incoming Ph.D.", index_html)
         self.assertIn("advised by Prof. Zhenning Cai", index_text)
@@ -133,20 +133,22 @@ class MkDocsSiteBuildTest(unittest.TestCase):
         self.assertIn("LGNO: A Local-Global Neural Operator for Hyperbolic Conservation Laws", index_text)
         self.assertIn('href="https://arxiv.org/abs/2606.18221">arXiv</a>', index_html)
         self.assertIn("Graduated from Zhejiang University with a B.S. in Mathematics and Applied Mathematics.", index_text)
+        self.assertIn("2026.07 — Graduated from Zhejiang University", index_text)
         self.assertIn(
             "Received the Chu Kochen Scholarship, the highest honor bestowed upon Zhejiang University students.",
             index_text,
         )
+        self.assertIn("2025.10 — Received the Chu Kochen Scholarship", index_text)
         self.assertNotIn("One manuscript on learning missing physics from legacy simulators was accepted.", index_text)
         phd_news_pos = index_text.index("Started my Ph.D. studies in Mathematics")
         published_news_pos = index_text.index("Our paper Learning missing physics")
         lgno_news_pos = index_text.index("Our preprint LGNO:")
         graduation_news_pos = index_text.index("Graduated from Zhejiang University")
         scholarship_news_pos = index_text.index("Received the Chu Kochen Scholarship")
-        self.assertLess(phd_news_pos, published_news_pos)
+        self.assertLess(phd_news_pos, graduation_news_pos)
+        self.assertLess(graduation_news_pos, published_news_pos)
         self.assertLess(published_news_pos, lgno_news_pos)
-        self.assertLess(lgno_news_pos, graduation_news_pos)
-        self.assertLess(graduation_news_pos, scholarship_news_pos)
+        self.assertLess(lgno_news_pos, scholarship_news_pos)
         self.assertNotIn("GPA:", index_html)
         self.assertNotIn("Relevant coursework", index_html)
         self.assertNotIn("Download PDF", index_html)
@@ -213,7 +215,7 @@ class MkDocsSiteBuildTest(unittest.TestCase):
         self.assertIn("2025.12-2026.04", research_html)
         self.assertIn("2025.07-2025.08", research_html)
         self.assertIn("2024.03-2025.05", research_html)
-        self.assertIn("2022.09-2026.06", index_html)
+        self.assertIn("2022.09-2026.07", index_html)
         self.assertIsNone(
             re.search(
                 r"\b(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]* \d{4}\b",

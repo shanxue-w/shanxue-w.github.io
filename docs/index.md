@@ -9,10 +9,10 @@ More broadly, I am interested in combining ideas from classical numerical method
 ## News
 
 - **2026.08** — Started my Ph.D. studies in Mathematics at the National University of Singapore.
+- **2026.07** — Graduated from Zhejiang University with a B.S. in Mathematics and Applied Mathematics.
 - **2026.06** — Our paper *Learning missing physics from legacy simulators with alternating neural integrators* was published in *Nature Communications*. [DOI](https://doi.org/10.1038/s41467-026-74002-2)
 - **2026.06** — Our preprint *LGNO: A Local-Global Neural Operator for Hyperbolic Conservation Laws* became available on arXiv. [arXiv](https://arxiv.org/abs/2606.18221)
-- **2026.06** — Graduated from Zhejiang University with a B.S. in Mathematics and Applied Mathematics.
-- **2025** — Received the Chu Kochen Scholarship, the highest honor bestowed upon Zhejiang University students.
+- **2025.10** — Received the Chu Kochen Scholarship, the highest honor bestowed upon Zhejiang University students.
 
 ## Education
 
@@ -20,7 +20,7 @@ More broadly, I am interested in combining ideas from classical numerical method
 Ph.D. student in Mathematics, 2026.08-
 
 **Zhejiang University**  
-B.S. in Mathematics and Applied Mathematics, 2022.09-2026.06
+B.S. in Mathematics and Applied Mathematics, 2022.09-2026.07
 
 ## Research Interests
 
