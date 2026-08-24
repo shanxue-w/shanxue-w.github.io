@@ -1,6 +1,6 @@
 # About
 
-I am a Ph.D. student in the Department of Mathematics at the National University of Singapore (NUS), advised by Prof. Zhenning Cai. I received my B.S. in Mathematics and Applied Mathematics from Zhejiang University in 2026.
+I am a Ph.D. student in the Department of Mathematics at the National University of Singapore (NUS), supervised by [Prof. Zhenning Cai](https://blog.nus.edu.sg/matcz/). I received my B.S. in Mathematics and Applied Mathematics from Zhejiang University in 2026.
 
 My research lies at the intersection of **numerical analysis, scientific computing, and scientific machine learning**, with a particular focus on partial differential equations. I am especially interested in developing **structure-preserving operator learning methods** that incorporate mathematical and physical properties—such as conservation, positivity, entropy dissipation, and geometric structure—into data-driven models.
 
