@@ -38,6 +38,8 @@ The script numbers entries continuously across sections, so the first item is `1
 
 ## Editing Content
 
+Keep News entries in `docs/index.md` newest first. The homepage shows the first five entries and automatically groups older entries under “Earlier news”. Add new entries at the top without deleting old ones; all entries remain visible when JavaScript is unavailable.
+
 - Main homepage content: `docs/index.md`
 - Publications data source: `data/publications.json`
 - Generated publications page: `docs/publications.md`

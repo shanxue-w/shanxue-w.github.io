@@ -2,6 +2,7 @@
 
 ## Honors & Awards
 
+- Faculty of Science Dean's Graduate Fellowship, National University of Singapore, 2026
 - Chu Kochen Scholarship, Zhejiang University, 2025
 - National Scholarship, Ministry of Education of China, 2023, 2024, 2025
 - Bronze Award, Shing-Tung Yau College Student Mathematics Competition, Applied and Computational Mathematics category, 2025

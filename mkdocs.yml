@@ -15,6 +15,7 @@ markdown_extensions:
   - toc:
       permalink: true
   - sane_lists
+  - md_in_html
 
 nav:
   - Home: index.md

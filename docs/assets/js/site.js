@@ -1,4 +1,19 @@
 (function () {
+  var list = document.querySelector(".news-section > ul");
+  if (!list || list.children.length <= 5) return;
+
+  var archive = document.createElement("details");
+  archive.className = "news-archive";
+  var summary = document.createElement("summary");
+  summary.textContent = "Earlier news";
+  var olderNews = document.createElement("ul");
+  while (list.children.length > 5) olderNews.appendChild(list.children[5]);
+  archive.appendChild(summary);
+  archive.appendChild(olderNews);
+  list.after(archive);
+})();
+
+(function () {
   var toggle = document.querySelector(".nav-toggle");
   var navLinks = Array.prototype.slice.call(document.querySelectorAll(".site-nav a[data-section]"));
 
