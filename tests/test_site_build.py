@@ -201,7 +201,7 @@ class MkDocsSiteBuildTest(unittest.TestCase):
         self.assertNotIn("Article in press", publications_text)
         self.assertIn("In revision, <strong>2026</strong>.", publications_html)
         self.assertIn("Submitted, double-blind peer review, <strong>2026</strong>.", publications_html)
-        self.assertIn('<ol start="3">', publications_html)
+        self.assertIn('<ol start="4">', publications_html)
         lgno_pos = publications_text.index("LGNO: A local–global neural operator for hyperbolic conservation laws")
         blinded_preprint_pos = publications_text.index("Hao Wang and Qi Tang. Submitted, double-blind peer review, 2026.")
         accepted_publication_pos = publications_text.index("Learning missing physics from legacy simulators with alternating neural integrators")
