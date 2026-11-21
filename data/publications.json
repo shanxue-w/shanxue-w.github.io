@@ -4,6 +4,10 @@
       "heading": "Preprints",
       "entries": [
         {
+          "authors": "Hao Wang and Zhenning Cai",
+          "details": "Submitted, 2026"
+        },
+        {
           "title": "LGNO: A local–global neural operator for hyperbolic conservation laws",
           "authors": "Hao Wang, Chi-Wang Shu, and Qi Tang",
           "details": "In revision, 2026. [arXiv](https://arxiv.org/abs/2606.18221)"
@@ -11,10 +15,6 @@
         {
           "authors": "Hao Wang and Qi Tang",
           "details": "Submitted, double-blind peer review, 2026"
-        },
-        {
-          "authors": "Hao Wang and Zhenning Cai",
-          "details": "Submitted, 2026"
         }
       ]
     },
