@@ -2,7 +2,8 @@
 
 ## Preprints
 
-1. Hao Wang and Zhenning Cai. Submitted, **2026**.
+1. **Learning the Boltzmann Collision Operator with Structural Constraints for Fast Kinetic Simulation**<br>
+   Hao Wang and Zhenning Cai. Submitted, **2026**. [arXiv](https://arxiv.org/abs/2611.28864).
 2. **LGNO: A local–global neural operator for hyperbolic conservation laws**<br>
    Hao Wang, Chi-Wang Shu, and Qi Tang. In revision, **2026**. [arXiv](https://arxiv.org/abs/2606.18221).
 3. Hao Wang and Qi Tang. Submitted, double-blind peer review, **2026**.

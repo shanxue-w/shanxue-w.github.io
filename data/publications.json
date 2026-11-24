@@ -4,8 +4,9 @@
       "heading": "Preprints",
       "entries": [
         {
+          "title": "Learning the Boltzmann Collision Operator with Structural Constraints for Fast Kinetic Simulation",
           "authors": "Hao Wang and Zhenning Cai",
-          "details": "Submitted, 2026"
+          "details": "Submitted, 2026. [arXiv](https://arxiv.org/abs/2611.28864)"
         },
         {
           "title": "LGNO: A local–global neural operator for hyperbolic conservation laws",
