@@ -14,6 +14,7 @@ I am particularly interested in kinetic equations and conservation laws, and in 
 
 ## News
 
+- **2026.11** — Our paper *Learning the Boltzmann Collision Operator with Structural Constraints for Fast Kinetic Simulation* has been submitted. [arXiv](https://arxiv.org/abs/2611.28864)
 - **2026.08** — Started my Ph.D. studies in Mathematics at the National University of Singapore.
 - **2026.07** — Graduated from Zhejiang University with a B.S. in Mathematics and Applied Mathematics.
 - **2026.06** — Our paper *Learning missing physics from legacy simulators with alternating neural integrators* was published in *Nature Communications*. [DOI](https://doi.org/10.1038/s41467-026-74002-2)
